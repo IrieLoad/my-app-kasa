@@ -1,13 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import About from "./pages/About";
-import Home from "./pages/Home";
-import Location from "./components/Location";
-
-//import Error from "./pages/Error";
-//import Location from "./pages/Location";
-//import Footer from "./components/Footer";
+import Header from "./components/Header/header";
+import Footer from "./components/Footer/footer";
+import About from "./pages/About/about";
+import Home from "./pages/Home/home";
+import Location from "./components/Location/location";
 
 
 function App () {

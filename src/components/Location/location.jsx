@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import lodging from "../data/lodging.json";
+import lodging from "../../data/lodging.json";
 
 function lodgingID(id) {
     return lodging.find((location) => location.id === id);

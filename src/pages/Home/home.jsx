@@ -1,6 +1,6 @@
-import pictureHomePage from "../assets/images/picture-home-page.jpg";
-import Card from "../components/card";
-import lodging from "../data/lodging.json";
+import pictureHomePage from "../../assets/images/banner-home.jpg";
+import Card from "../../components/Card/card";
+import lodging from "../../data/lodging.json";
 
 function Home () {
     return (
