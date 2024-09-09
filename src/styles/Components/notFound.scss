@@ -1,0 +1,33 @@
+.error-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    flex: 1;
+    text-align: center; 
+    color: #ff6060; 
+    background-color: #fff;
+  
+    &-number {
+      font-size: 250px; 
+      margin: 0; 
+    }
+  
+    &-message {
+      font-size: 30px;
+      margin: 40px 0; 
+    }
+  
+    &-link {
+      font-size: 18px; 
+      color: black;
+      text-decoration: none; 
+      border-bottom: 1px solid black; 
+      margin: 40px 0; 
+  
+      &:hover {
+        color: #ff4040;
+        border-bottom: 1px solid #ff4040; 
+      }
+    }
+  }
