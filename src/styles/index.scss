@@ -1,5 +1,8 @@
 @use "./app.scss" ;
-@use "./header.scss" ;
-@use "./footer.scss";
-@use "./home.scss";
-@use "./card.scss";
+@use "../styles/Pages/home.scss";
+@use "../styles/Pages/about.scss";
+@use "../styles/Components/header.scss";
+@use "../styles/Components/footer.scss";
+@use "../styles/Components/card.scss";
+@use "../styles/Components/banner.scss";
+@use "../styles/Components/collapse.scss";
