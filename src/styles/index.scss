@@ -1,9 +1,18 @@
 @use "./app.scss" ;
+
 @use "../styles/Pages/home.scss";
-@use "../styles/Pages/about.scss";
-@use "../styles/Components/header.scss";
-@use "../styles/Components/footer.scss";
+@use "../styles/Pages/about";
+@use "../styles/Pages/ficheLogement.scss";
+
+@use "../styles/Layout/header.scss";
+@use "../styles/Layout/footer.scss";
+
 @use "../styles/Components/card.scss";
 @use "../styles/Components/banner.scss";
 @use "../styles/Components/collapse.scss";
 @use "../styles/Components/notFound.scss";
+@use "../styles/Components/carousel.scss";
+@use "../styles/Components/tags.scss";
+@use '../styles/Components/Host.scss';
+@use '../styles/Components/Rating';
+@use '../styles/Components/Logement';

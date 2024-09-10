@@ -1,19 +1,24 @@
 import PropTypes from "prop-types";
-import {Link} from "react-router-dom";
 
-function Card ({lodging}) {
-    return (
-        lodging.map((lodging)=>(
-            <Link to={`/location/${lodging.id}`} className="card" key={lodging.id}>
-                <img src={lodging.cover} alt={lodging.title} />
-                <h2>{lodging.title}</h2>
-            </Link>
-        ))
-    );
-};
+function Card({ logement }) { 
+  return (
+    <div className="card">
+      <div className="card-image-container">
+        <img src={logement.cover} alt={logement.title} className="card-image" /> 
+      </div>
+      <div className="card-content">
+        <h2 className="card-title">{logement.title}</h2> 
+      </div>
+    </div>
+  );
+}
 
 Card.propTypes = {
-        lodging: PropTypes.array.isRequired
-    }
+  logement: PropTypes.shape({ 
+    id: PropTypes.string.isRequired,
+    cover: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+  }).isRequired,
+};
 
 export default Card;
