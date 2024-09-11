@@ -9,7 +9,7 @@
   padding: 10px 15px; 
   cursor: pointer; 
   background-color: #ff6060; 
-  border-radius: 5px;
+  border-radius: 10px;
   height: 45px;
 }
 
@@ -42,3 +42,17 @@
   margin: 0;
 }
 
+@media (max-width: 375px) {
+  .collapse-header {
+    height: 20px;
+  }
+
+  .collapse-title {
+    font-size: 15px; 
+  }
+
+  .collapse-text,
+  .collapse-list {
+    font-size: 15px; 
+}
+}

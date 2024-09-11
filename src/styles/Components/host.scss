@@ -16,3 +16,10 @@
     object-fit: cover; 
   }
   
+  @media (max-width: 375px) {
+    
+    .host-picture {
+      width: 32px; 
+      height: 32px; 
+    }
+  }

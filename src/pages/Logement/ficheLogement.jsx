@@ -30,31 +30,29 @@ function FicheLogement() {
     <div className="fiche-logement">
       {/* Carousel d'images */}
       <Carousel slides={pictures} />
-
-      {/* Informations principales */}
-      <div className="fiche-logement-content">
-        <div className="fiche-logement-header">
+      <div className="fiche-logement-container"> 
+        <div className="fiche-logement-info">
+          {/* Informations principales */}
           <h1 className="fiche-logement-title">{title}</h1>
           <p className="fiche-logement-location">{location}</p>
-        </div>
-        {/* Host */}
-          <div className="fiche-logement-host">
-            <Host name={host.name} picture={host.picture} />
-          </div>
-      </div>
-      <div className="fiche-logement-content">
           {/* Tags */}
           <div className="fiche-logement-tags">
             {tags.map((tag, index) => (
-            <Tags key={index} label={tag} />
+              <Tags key={index} label={tag} />
             ))} 
           </div>
-          {/* Tags */}
-          <div className="fiche-logement-rating">
-            <Rating rating={parseInt(rating)} />
+        </div>
+        <div className="fiche-logement-host-rating">
+          {/* Host */}
+          <div className="fiche-logement-host">
+            <Host name={host.name} picture={host.picture} />
           </div>
+          {/* Rating */}
+            <div className="fiche-logement-rating">
+              <Rating rating={parseInt(rating)} />
+            </div>
+        </div>
       </div>
-      
       {/* Collapses Description et Équipements */}
       <div className="fiche-logement-collapses">
         {/* Utilisation de Collapse avec children */}

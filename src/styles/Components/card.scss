@@ -1,8 +1,7 @@
 .gallery-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 30px;
+    justify-content: space-around;
     padding: 35px 0;
     background-color: #f6f6f6;
     border-radius: 25px;
@@ -60,4 +59,33 @@
     padding: 0 10px;
     text-align: left; 
     font-weight: 500;
+  }
+
+  @media (max-width: 375px) {
+    .gallery-cards {
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+      padding: 0; 
+      margin: 20px auto; 
+      width: 90%; 
+      background-color:transparent ;
+    }
+  
+    .card-link {
+      width: 100%; 
+      margin-bottom: 20px; 
+    }
+  
+    .card {
+      height: 255px; 
+    }
+  
+    .card-content {
+      height: 50px;  
+    }
+  
+    .card-title {
+      font-size: 16px; 
+    }
   }

@@ -18,5 +18,17 @@
     font-size: 14px; 
     color: #fff; 
     font-weight: 500; 
-    text-transform: capitalize; 
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: 375px) {
+    .tag {
+      width: 84px;
+      height: 18px;
+    }
+
+    .tag-label {
+      font-size: 10px; 
+    }
   }
