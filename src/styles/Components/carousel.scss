@@ -1,85 +1,89 @@
+// Container principal du carrousel
 .carousel {
-    position: relative; 
+  position: relative;
+  width: 100%;
+  height: 415px;
+  margin: 20px auto;
+
+  // Conteneur pour les images du carrousel
+  &-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     width: 100%;
-    height: 415px;
-    margin: 20px auto; 
-  
-    &-slider {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      width: 100%;
-      height: 415px;
-      
+    height: 100%; // Adapte à la hauteur du conteneur
+  }
+
+  // images du carrousel
+  &-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+
+  // flèches de navigation
+  &-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+
+    // Flèche de navigation à gauche
+    &-left {
+      left: 18px;
     }
-  
-    &-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 25px;
+
+    // Flèche de navigation à droite
+    &-right {
+      right: 20px;
     }
-  
-    &-arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 0;
-      z-index: 10;
-  
-      &-left {
-        left: 18px;
-      }
-  
-      &-right {
-        right: 20px;
-      }
-  
-      img {
-        width: 46px;
-        height: 79px;
-      }
-    }
-  
-    &-indicator {
-      position: absolute;
-      bottom: 10px;
-      right: 50%;
-      transform: translateX(50%);
-      color: #fff;
-      padding: 5px 10px;
-      border-radius: 5px;
-      font-size: 18px;
+
+    // Taille des images dans les flèches
+    img {
+      width: 46px;
+      height: 79px;
     }
   }
 
-  @media (max-width: 375px) {
-    .carousel {
-      height: 255px;
-    }
+  // indicateur de pagination
+  &-indicator {
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+}
 
-    .carousel-slider {
-      height: 255px;
-    }
-    .carousel-image {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-
-    .carousel-arrow img {
-      width: 11px;
-      height: 19px;
-    }
-
-    .carousel-indicator {
-      display: none;
-    }
+// Version mobile 
+@media (max-width: 375px) {
+  .carousel {
+    height: 255px;
   }
 
- 
+  .carousel-slider {
+    height: 100%; 
+  }
+
+  .carousel-image {
+    border-radius: 10px;
+  }
+
+  .carousel-arrow img {
+    width: 11px;
+    height: 19px;
+  }
+
+  .carousel-indicator {
+    display: none; 
+  }
+}

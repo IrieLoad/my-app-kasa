@@ -1,20 +1,23 @@
+// page "About"
 .about-page {
-    width: 100%;
-    margin: 0 auto;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  
+  width: 100%;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+// collapses dans la page "About"
 .about-page-collapses {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-self: center;
-  gap: 30px; 
+  gap: 30px;
   width: 80%;
   margin: 40px 0;
 }
-  
+
+// Version mobile 
 @media (max-width: 375px) {
   .about-page-collapses {
     width: 90%;

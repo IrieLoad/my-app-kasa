@@ -1,34 +1,38 @@
+// conteneur principal du logement
 .logement {
-    display: flex;
-    justify-content: space-between; 
-    margin-top: 20px; 
-  
-    &-header {
-      max-width: 60%; 
-    }
-  
-    &-title {
-      font-size: 2rem; 
-      color: #ff6060; 
-    }
-  
-    &-location {
-      font-size: 1.1rem; 
-      color: #333; 
-      margin: 10px 0; 
-    }
-  
-    &-tags {
-      display: flex; 
-      gap: 10px; 
-      margin-top: 15px; 
-    }
-  
-    &-host-rating {
-      display: flex;
-      flex-direction: column; 
-      align-items: flex-end; 
-    }
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  // en-tête du logement
+  &-header {
+    max-width: 60%;
   }
 
-  
+  // titre du logement
+  &-title {
+    font-size: 2rem;
+    color: #ff6060;
+  }
+
+  // localisation du logement
+  &-location {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 10px 0;
+  }
+
+  // tags du logement
+  &-tags {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  // évaluation de du logement
+  &-host-rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}

@@ -1,15 +1,24 @@
+// composant de notation (rating)
 .rating {
-    display: flex;
-    align-items: center; 
-    gap: 5px; 
-  }
-  
-  .rating-star {
-    width: 24px; 
-    height: 24px; 
-  }
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 
-  .star {
-    width: 25px; /* Taille des étoiles */
-    height: 25px; /* Taille des étoiles */
+// étoiles de notation
+.rating-star {
+  width: 24px;
+  height: 24px;
+
+// Version mobile 
+  @media (max-width: 375px) {
+    width: 18px;
+    height: 18px;
   }
+}
+
+// étoiles spécifiques
+.star {
+  width: 25px;
+  height: 25px;
+}

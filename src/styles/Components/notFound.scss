@@ -1,33 +1,84 @@
+// page d'erreur (404)
 .error-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
-    flex: 1;
-    text-align: center; 
-    color: #ff6060; 
-    background-color: #fff;
-  
-    &-number {
-      font-size: 250px; 
-      margin: 0; 
-    }
-  
-    &-message {
-      font-size: 30px;
-      margin: 40px 0; 
-    }
-  
-    &-link {
-      font-size: 18px; 
-      color: black;
-      text-decoration: none; 
-      border-bottom: 1px solid black; 
-      margin: 40px 0; 
-  
-      &:hover {
-        color: #ff4040;
-        border-bottom: 1px solid #ff4040; 
-      }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+  color: #ff6060;
+  background-color: #fff;
+  width: 100%;
+
+  // numéro d'erreur
+  &-number {
+    font-size: 250px;
+    margin: 40px 0;
+  }
+
+  // message d'erreur
+  &-message {
+    font-size: 30px;
+    margin: 40px 0;
+  }
+
+  // lien de retour
+  &-link {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid black;
+    margin: 60px 0 80px 0;
+
+    &:hover {
+      color: #ff4040;
+      border-bottom: 1px solid #ff4040;
     }
   }
+}
+
+  // Saut de ligne 
+  .line-break {
+    display: none; 
+  }
+
+//version mobile
+@media (max-width: 375px) {
+  .error-page {
+    &-number {
+      font-size: 80px;
+    }
+
+    &-message {
+      font-size: 18px;  
+      width: 260px;
+    }
+
+    &-link {
+      font-size: 14px;
+    }
+  }
+
+  .line-break {
+    white-space: normal; 
+    display: flex; 
+  }
+
+}
+
+//version tablette
+@media (max-width: 768px) {
+  .error-page {
+    &-number {
+      font-size: 120px;
+    }
+
+    &-message {
+      font-size: 18px;  
+    }
+
+    &-link {
+      font-size: 14px;
+    }
+  }
+}

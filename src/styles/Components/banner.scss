@@ -1,21 +1,24 @@
+// Styles pour le banner
 .banner {
-  margin: 20px auto; 
-  border-radius: 25px; 
+  margin: 20px auto;
+  border-radius: 25px;
   overflow: hidden;
-  position: relative; 
+  position: relative;
   width: 90%;
-  height: 223px; 
+  height: 223px;
   display: flex;
   align-items: center;
   justify-content: center;
 
+  // image du banner
   &-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     display: flex;
   }
 
+  // masque du banner
   &-mask {
     position: absolute;
     top: 0;
@@ -25,6 +28,7 @@
     background-color: rgba(0, 0, 0, 0.4);
   }
 
+  // texte du banner
   &-text {
     position: absolute;
     color: white;
@@ -32,14 +36,14 @@
     text-align: center;
     font-weight: 700;
   }
-
 }
 
+// Version mobile 
 @media (max-width: 375px) {
   .banner {
     height: 111px;
     border-radius: 10px;
-    margin: 10px auto; 
+    margin: 10px auto;
 
     &-text {
       width: 225px;

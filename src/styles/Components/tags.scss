@@ -1,34 +1,32 @@
-.fiche-logement-tags {
-  display: flex; 
-  gap: 10px; 
+// Styles pour chaque tag
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  background-color: #ff6060;
+  border-radius: 25px;
+  padding: 5px 15px;
+  margin: 0;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+// Version mobile 
+  @media (max-width: 375px) {
+    height: 20px;
+    border-radius: 10px;
+    padding: 0 8px;
+  }
 }
 
-.tag {
-    display: inline-block; 
-    background-color: #ff6060; 
-    border-radius: 25px; 
-    padding: 5px 15px; 
-    margin: 0; 
-    text-align: center; 
-    white-space: nowrap; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-  }
-  
-  .tag-label {
-    font-size: 14px; 
-    color: #fff; 
-    font-weight: 500; 
-    display: flex;
-    justify-content: center;
-  }
+// texte à l'intérieur des tags
+.tag-label {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  margin: auto 0;
 
-  @media (max-width: 375px) {
-    .tag {
-      width: 84px;
-      height: 18px;
-    }
-
-    .tag-label {
-      font-size: 10px; 
-    }
+// Version tablette
+  @media (max-width: 768px) {
+    font-size: 10px;
   }
+}
