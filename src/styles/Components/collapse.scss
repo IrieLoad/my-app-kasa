@@ -1,73 +1,69 @@
-// conteneur principal du collapse
+@use "../variables.scss";
+@use "../mixins.scss" ;
+
+
 .collapse {
   width: 100%;
-}
 
-// en-tête du collapse
-.collapse-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 15px;
-  cursor: pointer;
-  background-color: #ff6060;
-  border-radius: 10px;
-  height: 40px;
-}
-
-// titre dans l'en-tête du collapse
-.collapse-title {
-  font-size: 24px;
-  margin: 0;
-  font-weight: 700;
-  color: #fff;
-}
-
-// flèche dans l'en-tête du collapse
-.collapse-arrow {
-  width: 20px;
-  transition: transform 0.3s ease;
-}
-
-// flèche lorsque le collapse est ouvert
-.collapse-arrow-open {
-  transform: rotate(180deg);
-}
-
-// contenu du collapse
-.collapse-content {
-  padding: 15px;
-  background-color: #f6f6f6;
-  border-radius: 5px;
-}
-
-// texte et listes dans le contenu du collapse
-.collapse-text,
-.collapse-list {
-  font-size: 18px;
-  color: black;
-  margin: 0;
-}
-
-// Version mobile 
-@media (max-width: 375px) {
-  .collapse-header {
-    height: 20px;
+  &__header {
+    @include mixins.flex-center(row, space-between, center);
+    height: 40px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: variables.$primary-color;
+    border-radius: 10px;
   }
 
-  .collapse-title {
-    font-size: 15px;
+  &__title {
+    @include mixins.text-style(24px, variables.$third-color, 700, left);
+    margin: 0;
   }
 
-  .collapse-text,
-  .collapse-list {
-    font-size: 15px;
+  &__arrow {
+    width: 20px;
+    transition: transform 0.3s ease;
   }
-}
 
-// Version tablette
-@media (max-width: 768px) {
-  .collapse-header {
-    height: 35px;
+  &__arrow-open {
+    transform: rotate(180deg);
+  }
+
+  &__content {
+    @include mixins.spacing(0, 15px);
+    background-color: variables.$secondary-color;
+    border-radius: 5px;
+  }
+
+  &__text,
+  &__list {
+    @include mixins.text-style(18px, black, normal, left);
+    margin: 0;
+  }
+
+  // Version mobile 
+  @media (max-width: 375px) {
+    &__header {
+      height: 18px;
+    }
+
+    &__title {
+      font-size: 14px;
+    }
+
+    &__text,
+    &__list {
+      font-size: 15px;
+    }
+  }
+
+  // Version tablette
+  @media (max-width: 768px) {
+    &__title {
+      font-size: 20px;
+    }
+
+    &__header {
+      height: 28px;
+    }
   }
 }

@@ -9,20 +9,20 @@ function Logement({ title, localisation, tags, host, rating }) {
     <div className="logement"> {/* Conteneur principal du composant Logement */}
       
       {/* Affichage du titre et de la localisation du logement */}
-      <div className="logement-header"> {/* Conteneur pour le titre et la localisation */}
-        <h1 className="logement-title">{title}</h1> 
-        <p className="logement-location">{localisation}</p> 
+      <div className="logement__header"> {/* Conteneur pour le titre et la localisation */}
+        <h1 className="logement__title">{title}</h1> 
+        <p className="logement__location">{localisation}</p> 
       </div>
 
       {/* Affichage des tags du logement */}
-      <div className="logement-tags"> {/* Conteneur pour les tags */}
+      <div className="logement__tags"> {/* Conteneur pour les tags */}
         {tags.map((tag, index) => ( // Boucle à travers le tableau de tags
           <Tags key={index} label={tag} /> // Utilisation du composant Tags pour chaque tag
         ))}
       </div>
 
       {/* Affichage des informations de l'hôte et de la notation */}
-      <div className="logement-host-rating"> {/* Conteneur pour l'hôte et la notation */}
+      <div className="logement__host-rating"> {/* Conteneur pour l'hôte et la notation */}
         {/* Affichage des informations de l'hôte (nom et photo) */}
         <Host name={host.name} picture={host.picture} />
         {/* Affichage de la notation */}

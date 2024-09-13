@@ -1,0 +1,21 @@
+// Mixin pour l'utilisation de flexbox
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+  }
+
+// Mixin pour les propriétés de texte
+@mixin text-style($font-size: 16px, $color: black, $font-weight: normal, $align: left) {
+  font-size: $font-size;
+  color: $color;
+  font-weight: $font-weight;
+  text-align: $align;
+}
+
+// Mixin pour les marges et les paddings
+@mixin spacing($margin: 0, $padding: 0) {
+  margin: $margin; // Définir la marge
+  padding: $padding; // Définir le padding
+}

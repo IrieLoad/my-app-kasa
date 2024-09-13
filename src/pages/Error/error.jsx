@@ -7,15 +7,15 @@ function ErrorPage() {
     // Conteneur principal pour la page d'erreur
     <div className="error-page">
       
-      <h1 className="error-page-number">404</h1>
+      <h1 className="error-page__number">404</h1>
     
-      <p className="error-page-message">
+      <p className="error-page__message">
         {/* Utilisation d'un <span> avec la classe "line-break" pour gérer le saut de ligne sur les petits écrans */}
         Oups! La page que <span className="line-break"> </span>vous demandez n'existe pas.
       </p>
       
       {/* Lien de navigation qui permet à l'utilisateur de revenir à la page d'accueil */}
-      <NavLink to="/" className="error-page-link">
+      <NavLink to="/" className="error-page__link">
         Retourner sur la page d'accueil
       </NavLink>
     </div>

@@ -1,7 +1,9 @@
 @use "./app.scss" ;
+@use "./variables.scss" ;
+@use "./mixins.scss" ;
 
 @use "../styles/Pages/home.scss";
-@use "../styles/Pages/about";
+@use "../styles/Pages/about.scss";
 @use "../styles/Pages/ficheLogement.scss";
 
 @use "../styles/Layout/header.scss";
@@ -14,5 +16,6 @@
 @use "../styles/Components/carousel.scss";
 @use "../styles/Components/tags.scss";
 @use '../styles/Components/Host.scss';
-@use '../styles/Components/Rating';
-@use '../styles/Components/Logement';
+@use '../styles/Components/Rating.scss';
+@use '../styles/Components/Logement.scss';
+

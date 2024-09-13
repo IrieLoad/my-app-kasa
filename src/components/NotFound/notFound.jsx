@@ -7,15 +7,15 @@ function ErrorPage() {
     <div className="error-page">
       
       {/* Affiche le code d'erreur 404 */}
-      <h1 className="error-page-number">404</h1>
+      <h1 className="error-page__number">404</h1>
       
       {/* Message d'erreur informant l'utilisateur que la page demandée n'existe pas */}
-      <p className="error-page-message">
+      <p className="error-page__message">
         Oups! La page que vous demandez n'existe pas.
       </p>
       
       {/* Lien de navigation qui permet à l'utilisateur de revenir à la page d'accueil */}
-      <NavLink to="/" className="error-page-link">
+      <NavLink to="/" className="error-page__link">
         Retourner sur la page d'accueil
       </NavLink>
     </div>

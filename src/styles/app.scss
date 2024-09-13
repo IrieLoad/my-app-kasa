@@ -1,24 +1,25 @@
+@use "../styles/variables.scss" ;
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: variables.$font-family;
   margin: auto;
   padding: 0;
   max-width: 1440px;
+
+  // Version mobile 
+  @media (max-width: 375px) {
+    max-width: 375px;
+  }
 }
 
-#root{
+#root {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   max-width: 100%;
-}
 
-// Version mobile 
-@media (max-width: 375px) {
-  body {
-    max-width: 375px;
-  }
-  
-  #root{
+  // Version mobile 
+  @media (max-width: 375px) {
     width: 100%;
   }
 }

@@ -4,13 +4,13 @@ import PropTypes from "prop-types"; // Importation de PropTypes pour la validati
 function Card({ logement }) { 
   return (
     <div className="card"> {/* Conteneur principal de la carte */}
-      <div className="card-image-container"> {/* Conteneur de l'image de la carte */}
+      <div className="card__image-container"> {/* Conteneur de l'image de la carte */}
         {/* Image du logement avec l'attribut 'src' pour la source de l'image et 'alt' pour le texte alternatif */}
-        <img src={logement.cover} alt={logement.title} className="card-image" /> 
+        <img src={logement.cover} alt={logement.title} className="card__image" /> 
       </div>
-      <div className="card-content"> {/* Conteneur du contenu de la carte */}
+      <div className="card__content"> {/* Conteneur du contenu de la carte */}
         {/* Titre du logement */}
-        <h2 className="card-title">{logement.title}</h2> 
+        <h2 className="card__title">{logement.title}</h2> 
       </div>
     </div>
   );

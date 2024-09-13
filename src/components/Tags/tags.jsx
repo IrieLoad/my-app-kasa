@@ -5,7 +5,7 @@ function Tag({ label }) {
   return (
     <div className="tag"> {/* Conteneur principal du tag */}
       {/* Affichage du label du tag */}
-      <span className="tag-label">{label}</span>
+      <span className="tag__label">{label}</span>
     </div>
   );
 }

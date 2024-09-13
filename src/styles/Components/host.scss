@@ -1,36 +1,33 @@
-// conteneur principal de l'hôte
+@use "../variables.scss";
+@use "../mixins.scss" ;
+
+
 .host {
-  display: flex;
-  align-items: center;
-}
+  @include mixins.flex-center(row, center, center);
 
-// nom de l'hôte
-.host-name {
-  color: #ff6060;
-  font-size: 18px;
-  margin-right: 10px;
-  text-align: right;
-  display: inline-block;
-  white-space: normal;
-  width: 80px;
-}
-
-// photo de l'hôte
-.host-picture {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-// Version mobile 
-@media (max-width: 375px) {
-  .host-picture {
-    width: 32px;
-    height: 32px;
+  &__name {
+    @include mixins.text-style(18px, variables.$primary-color, normal, right);
+    @include mixins.spacing(0 10px 0 0);
+    display: inline-block;
+    width: 80px;
   }
 
-  .host-name {
-    font-size: 12px;
+  &__picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  // Version mobile 
+  @media (max-width: 375px) {
+    &__picture {
+      width: 32px;
+      height: 32px;
+    }
+
+    &__name {
+      font-size: 12px;
+    }
   }
 }

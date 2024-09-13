@@ -6,11 +6,11 @@ function Banner({ image, text, altText }) {
   return (
     <div className="banner"> {/* Conteneur principal de la bannière */}
       {/* Image de la bannière avec des son texte alternatif pour l'accessibilité */}
-      <img className="banner-image" src={image} alt={"Bannière"} /> 
+      <img className="banner__image" src={image} alt={"Bannière"} /> 
       {/* Couche de masque superposée à l'image */}
-      <div className="banner-mask"></div>
+      <div className="banner__mask"></div>
       {/* Affichage du texte de la bannière s'il est fourni via les props */}
-      {text && <span className="banner-text">{text}</span>}
+      {text && <span className="banner__text">{text}</span>}
     </div>
   );
 }

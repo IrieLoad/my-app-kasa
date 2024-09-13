@@ -40,15 +40,15 @@ function FicheLogement() {
       <Carousel slides={pictures} />
       
       {/* Conteneur pour les informations générales et la section d'évaluation de l'hôte */}
-      <div className="fiche-logement-container"> 
-        <div className="fiche-logement-info">
+      <div className="fiche-logement__container"> 
+        <div className="fiche-logement__info">
           {/* Titre du logement */}
-          <h1 className="fiche-logement-title">{title}</h1>
+          <h1 className="fiche-logement__title">{title}</h1>
           {/* Localisation du logement */}
-          <p className="fiche-logement-location">{location}</p>
+          <p className="fiche-logement__location">{location}</p>
           
           {/* Affichage des tags associés au logement */}
-          <div className="fiche-logement-tags">
+          <div className="fiche-logement__tags">
             {tags.map((tag, index) => (
               // Utilisation du composant Tags pour afficher chaque tag
               <Tags key={index} label={tag} />
@@ -57,20 +57,20 @@ function FicheLogement() {
         </div>
 
         {/* Conteneur pour l'hôte et la notation */}
-        <div className="fiche-logement-host-rating">
+        <div className="fiche-logement__host-rating">
           {/* Affichage des informations de l'hôte (nom et photo) */}
-          <div className="fiche-logement-host">
+          <div className="fiche-logement__host">
             <Host name={host.name} picture={host.picture} />
           </div>
           {/* Affichage de la notation sous forme d'étoiles */}
-          <div className="fiche-logement-rating">
+          <div className="fiche-logement__rating">
             <Rating rating={parseInt(rating)} />
           </div>
         </div>
       </div>
 
       {/* Section des collapses pour la description et les équipements */}
-      <div className="fiche-logement-collapses">
+      <div className="fiche-logement__collapses">
         {/* Collapse pour la description du logement */}
         <Collapse title="Description">
           {description}

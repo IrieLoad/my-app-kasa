@@ -5,10 +5,10 @@ function Host({ name, picture }) {
   return (
     <div className="host"> {/* Conteneur principal pour les informations de l'hôte */}
       {/* Affichage du nom de l'hôte */}
-      <span className="host-name">{name}</span>
+      <span className="host__name">{name}</span>
       {/* Affichage de la photo de l'hôte */}
       <img
-        className="host-picture" src={picture} alt={`Portrait de ${name}`} // Texte alternatif pour l'accessibilité
+        className="host__picture" src={picture} alt={`Portrait de ${name}`} // Texte alternatif pour l'accessibilité
       />
     </div>
   );

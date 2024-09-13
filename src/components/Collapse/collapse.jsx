@@ -16,27 +16,27 @@ function Collapse({ title, children }) {
   return (
     <div className="collapse"> {/* Conteneur principal du composant collapse */}
       {/* Entête du collapse, qui contient le titre et l'icône de la flèche */}
-      <div className="collapse-header" onClick={toggleCollapse}> {/* OnClick déclenche la fonction toggleCollapse */}
-        <h2 className="collapse-title">{title}</h2> 
+      <div className="collapse__header" onClick={toggleCollapse}> {/* OnClick déclenche la fonction toggleCollapse */}
+        <h2 className="collapse__title">{title}</h2> 
         <img
           src={arrowCollapse} // Affiche l'image de la flèche
           alt={isOpen ? "Réduire" : "Agrandir"} // Accessibilité : texte alternatif qui change en fonction de l'état du collapse
-          className={`collapse-arrow ${isOpen ? "collapse-arrow-open" : ""}`} // Ajoute une classe CSS conditionnelle si le collapse est ouvert
+          className={`collapse__arrow ${isOpen ? "collapse__arrow-open" : ""}`} // Ajoute une classe CSS conditionnelle si le collapse est ouvert
         />
       </div>
 
       {/* Affichage conditionnel du contenu du collapse seulement si isOpen est true */}
       {isOpen && (
-        <div className="collapse-content"> {/* Conteneur pour le contenu à l'intérieur du collapse */}
+        <div className="collapse__content"> {/* Conteneur pour le contenu à l'intérieur du collapse */}
           {/* Si children est un tableau */}
           {Array.isArray(children) ? (
-            <ul className="collapse-list"> {/* Conteneur de liste */}
+            <ul className="collapse__list"> {/* Conteneur de liste */}
               {children.map((item, index) => (
-                <li key={index} className="collapse-item"> {item} </li> // Chaque élément de la liste est affiché dans un <li>
+                <li key={index} className="collapse__item"> {item} </li> // Chaque élément de la liste est affiché dans un <li>
               ))}
             </ul>
           ) : (
-            <p className="collapse-text">{children}</p> // Sinon, si children est une chaîne de caractères, affiche un simple paragraphe
+            <p className="collapse__text">{children}</p> // Sinon, si children est une chaîne de caractères, affiche un simple paragraphe
           )}
         </div>
       )}

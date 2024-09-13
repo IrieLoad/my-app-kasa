@@ -9,7 +9,7 @@ function Rating({ rating }) {
   const stars = Array.from({ length: totalStars }, (_, index) => (
     <img
       key={index} // Clé unique pour chaque étoile
-      className="rating-star" // Classe CSS pour styliser les étoiles
+      className="rating__star" // Classe CSS pour styliser les étoiles
       src={index < rating ? completedNotation : emptyNotation} // Choix de l'image à afficher en fonction de la note
       alt={index < rating ? "Étoile pleine" : "Étoile vide"} // Texte alternatif pour l'accessibilité
     />

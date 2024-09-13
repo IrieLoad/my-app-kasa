@@ -1,56 +1,70 @@
-// Styles pour le header
+@use "../mixins.scss" ;
+
 .header {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    margin: 35px auto;
-  
-    nav {
-      width: 250px;
-  
-      ul {
-        display: flex;
-        justify-content: space-between;
-        padding: 0;
-  
-        a {
-          text-decoration: none;
-          color: black;
-  
-          &.underline {
-            text-decoration: underline;
-          }
+  @include mixins.flex-center(row, space-between, center);
+  width: 90%;
+  margin: 35px auto;
+
+  nav {
+    width: 250px;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+
+      a {
+        text-decoration: none;
+        color: black;
+
+        &.underline {
+          text-decoration: underline;
         }
       }
     }
-  
-    li {
-      list-style: none;
-      font-size: 24px;
-    }
   }
-  
-// Version mobile 
+
+  li {
+    @include mixins.text-style(24px, black, normal, center);
+    list-style: none;
+  }
+
+  // Version mobile 
   @media (max-width: 375px) {
-    .header {
-      margin: 20px auto;
-    }
-  
-    .header img {
+    margin: 20px auto;
+
+    img {
       width: 145px;
       height: 46px;
     }
-  
-    .header nav {
+
+    nav {
       width: 150px;
     }
-  
-    .header ul {
+
+    ul {
       padding: 0;
     }
-  
-    .header li {
+
+    li {
       font-size: 14px;
       text-transform: uppercase;
     }
   }
+
+  // Version tablette 
+  @media (max-width: 768px) {
+    img {
+      width: 150px;
+      height: 51px;
+    }
+
+    nav {
+      width: 200px;
+    }
+
+    li {
+      font-size: 18px;
+    }
+  }
+}

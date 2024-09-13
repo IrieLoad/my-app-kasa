@@ -30,23 +30,23 @@ function Carousel({ slides }) {
 
   return (
     <div className="carousel"> {/* Conteneur principal du carrousel */}
-      <div className="carousel-slider"> {/* Conteneur pour l'image active du carrousel */}
+      <div className="carousel__slider"> {/* Conteneur pour l'image active du carrousel */}
         {/* Affiche l'image actuelle du carrousel */}
-        <img src={slides[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="carousel-image" />
+        <img src={slides[currentIndex]} alt={`Slide ${currentIndex + 1}`} className="carousel__image" />
 
         {/* Affiche les flèches de navigation seulement s'il y a plus d'une image */}
         {totalSlides > 1 && (
           <>
             {/* Flèche gauche pour revenir à l'image précédente */}
             <button
-              className="carousel-arrow carousel-arrow-left" onClick={prevSlide}
+              className="carousel__arrow carousel__arrow-left" onClick={prevSlide}
               aria-label="Image précédente" // Accessibilité : texte pour les lecteurs d'écran
             >
               <img src={arrowLeft} alt="Flèche gauche" /> {/* Icône de flèche gauche */}
             </button>
             {/* Flèche droite pour passer à l'image suivante */}
             <button
-              className="carousel-arrow carousel-arrow-right" onClick={nextSlide}
+              className="carousel__arrow carousel__arrow-right" onClick={nextSlide}
               aria-label="Image suivante" // Accessibilité : texte pour les lecteurs d'écran
             >
               <img src={arrowRight} alt="Flèche droite" /> {/* Icône de flèche droite */}
@@ -57,7 +57,7 @@ function Carousel({ slides }) {
 
       {/* Indicateur de position de l'image seulement s'il y a plus d'une image */}
       {totalSlides > 1 && (
-        <div className="carousel-indicator">
+        <div className="carousel__indicator">
           {/* Affiche l'index de l'image actuelle et le nombre total d'images */}
           {currentIndex + 1}/{totalSlides}
         </div>

@@ -23,7 +23,7 @@ function Home () {
                     <Link 
                         to={`/logement/${logement.id}`} // Lien dynamique basé sur l'ID du logement
                         key={logement.id} // Clé unique pour chaque élément dans la liste
-                        className="card-link" 
+                        className="card__link" 
                     >
                         {/* Composant Card pour afficher les détails du logement */}
                         <Card logement={logement} /> 

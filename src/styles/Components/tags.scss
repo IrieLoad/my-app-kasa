@@ -1,32 +1,39 @@
-// Styles pour chaque tag
+@use "../variables.scss";
+@use "../mixins.scss" ;
+
 .tag {
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  background-color: #ff6060;
+  @include mixins.flex-center(row, center, center);
+  @include mixins.spacing(0, 5px 15px);
+  height: 25px;
+  background-color: variables.$primary-color;
   border-radius: 25px;
-  padding: 5px 15px;
-  margin: 0;
   white-space: nowrap;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  
-// Version mobile 
+
+  // Version mobile
   @media (max-width: 375px) {
     height: 20px;
-    border-radius: 10px;
     padding: 0 8px;
+    border-radius: 10px;
   }
-}
 
-// texte à l'intérieur des tags
-.tag-label {
-  font-size: 14px;
-  color: #fff;
-  font-weight: 500;
-  margin: auto 0;
-
-// Version tablette
+  // Version tablette
   @media (max-width: 768px) {
-    font-size: 10px;
+    height: 22px;
+  }
+
+  &__label {
+    @include mixins.text-style(14px, variables.$third-color, 500, center);
+    margin: auto 0;
+
+    // Version mobile
+    @media (max-width: 375px) {
+      font-size: 10px;
+    }
+
+    // Version tablette
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
   }
 }
