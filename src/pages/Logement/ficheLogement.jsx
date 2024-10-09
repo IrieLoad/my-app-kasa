@@ -1,11 +1,11 @@
 // Importation des hooks et composants nécessaires depuis React Router et des fichiers locaux
 import { useParams, Navigate } from "react-router-dom"; // Hooks pour récupérer les paramètres d'URL et naviguer
 import lodgingData from "../../data/lodging.json"; // Données de logement importées depuis un fichier JSON
-import Carousel from "../../components/Carrousel/carrousel"; // Composant de carrousel pour afficher les images
-import Host from "../../components/Host/host"; // Composant pour afficher l'hôte
-import Tags from "../../components/Tags/tags"; // Composant pour afficher les tags
-import Rating from "../../components/Rating/rating"; // Composant pour afficher la notation
-import Collapse from "../../components/Collapse/collapse"; // Composant pour afficher les collapses
+import Carousel from "../../components/carrousel"; // Composant de carrousel pour afficher les images
+import Host from "../../components/host"; // Composant pour afficher l'hôte
+import Tags from "../../components/tags"; // Composant pour afficher les tags
+import Rating from "../../components/rating"; // Composant pour afficher la notation
+import Collapse from "../../components/collapse"; // Composant pour afficher les collapses
 
 // Définition du composant pour la page de détail du logement
 function FicheLogement() {

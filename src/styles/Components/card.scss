@@ -13,6 +13,11 @@
   border-radius: 25px;
   background: variables.$secondary-color;
 
+  // Version tablette 
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 43%);
+  }  
+  
   // Version mobile 
   @media (max-width: 375px) {
     //@include mixins.flex-center(column, center, center);
@@ -24,10 +29,7 @@
     background-color: transparent;
   }
 
-  // Version tablette 
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(2, 43%);
-  }
+  
 }
 
 .card {

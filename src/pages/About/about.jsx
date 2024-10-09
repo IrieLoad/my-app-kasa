@@ -1,6 +1,6 @@
 // Importation des composants nécessaires et des données
-import Collapse from "../../components/Collapse/collapse"; // Composant Collapse 
-import Banner from "../../components/Banner/banner"; // Composant Banner 
+import Collapse from "../../components/collapse"; // Composant Collapse 
+import Banner from "../../components/banner"; // Composant Banner 
 import collapseData from "../../data/collapse.json"; // Importation des données pour les collapses à partir d'un fichier JSON
 import pictureAboutPage from "../../assets/images/banner-about.jpg"; // Importation de l'image utilisée pour la bannière de la page À propos
 

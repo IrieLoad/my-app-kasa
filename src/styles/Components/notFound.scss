@@ -39,6 +39,21 @@
     display: none;
   }
 
+  // Version tablette
+  @media (max-width: 768px) {
+    &__number {
+      font-size: 120px;
+    }
+
+    &__message {
+      font-size: 18px;
+    }
+
+    &__link {
+      font-size: 14px;
+    }
+  }
+
   // Version mobile
   @media (max-width: 375px) {
     &__number {
@@ -59,19 +74,5 @@
       display: flex;
     }
   }
-
-  // Version tablette
-  @media (max-width: 768px) {
-    &__number {
-      font-size: 120px;
-    }
-
-    &__message {
-      font-size: 18px;
-    }
-
-    &__link {
-      font-size: 14px;
-    }
-  }
+  
 }

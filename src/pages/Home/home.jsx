@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"; // Importation de Link depuis react-router-dom pour permettre la navigation entre les pages
 import pictureHomePage from "../../assets/images/banner-home.jpg"; // Importation de l'image utilisée pour la bannière de la page d'accueil
-import Banner from "../../components/Banner/banner"; // Importation du composant Banner pour afficher une bannière sur la page d'accueil
-import Card from "../../components/Card/card"; // Importation du composant Card pour afficher chaque logement sous forme de carte
+import Banner from "../../components/banner"; // Importation du composant Banner pour afficher une bannière sur la page d'accueil
+import Card from "../../components/card"; // Importation du composant Card pour afficher chaque logement sous forme de carte
 import lodging from "../../data/lodging.json"; // Importation des données de logement à partir d'un fichier JSON
 
 // Définition du composant de la page d'accueil

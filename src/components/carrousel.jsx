@@ -1,7 +1,7 @@
 import React, { useState } from "react"; // Import de React et du hook useState pour la gestion de l'état
 import PropTypes from "prop-types"; // Import de PropTypes pour la validation des propriétés
-import arrowRight from "../../assets/images/arrow-right.png"; // Import de l'image de la flèche droite
-import arrowLeft from "../../assets/images/arrow-left.png"; // Import de l'image de la flèche gauche
+import arrowRight from "../assets/images/arrow-right.png"; // Import de l'image de la flèche droite
+import arrowLeft from "../assets/images/arrow-left.png"; // Import de l'image de la flèche gauche
 
 // Définition du composant fonctionnel Carousel
 function Carousel({ slides }) {

@@ -40,6 +40,18 @@
     margin: 0;
   }
 
+  // Version tablette
+  @media (max-width: 768px) {
+    &__title {
+      font-size: 20px;
+    }
+
+    &__header {
+      height: 28px;
+    }
+  }
+
+
   // Version mobile 
   @media (max-width: 375px) {
     &__header {
@@ -56,14 +68,4 @@
     }
   }
 
-  // Version tablette
-  @media (max-width: 768px) {
-    &__title {
-      font-size: 20px;
-    }
-
-    &__header {
-      height: 28px;
-    }
-  }
-}
+}  

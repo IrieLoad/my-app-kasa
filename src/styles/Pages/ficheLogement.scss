@@ -60,6 +60,13 @@
     }
   }
 
+  // Version tablette
+  @media (max-width: 768px) {
+    &__title {
+      font-size: 27px;
+    }
+  }
+
   // Version mobile 
   @media (max-width: 375px) {
     &__container {
@@ -88,10 +95,5 @@
     }
   }
 
-  // Version tablette
-  @media (max-width: 768px) {
-    &__title {
-      font-size: 27px;
-    }
-  }
+  
 }

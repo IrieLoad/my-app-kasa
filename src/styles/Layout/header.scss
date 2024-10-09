@@ -29,6 +29,22 @@
     list-style: none;
   }
 
+   // Version tablette 
+   @media (max-width: 768px) {
+    img {
+      width: 150px;
+      height: 51px;
+    }
+
+    nav {
+      width: 200px;
+    }
+
+    li {
+      font-size: 18px;
+    }
+  }
+
   // Version mobile 
   @media (max-width: 375px) {
     margin: 20px auto;
@@ -49,22 +65,6 @@
     li {
       font-size: 14px;
       text-transform: uppercase;
-    }
-  }
-
-  // Version tablette 
-  @media (max-width: 768px) {
-    img {
-      width: 150px;
-      height: 51px;
-    }
-
-    nav {
-      width: 200px;
-    }
-
-    li {
-      font-size: 18px;
     }
   }
 }

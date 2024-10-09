@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"; // Importation de PropTypes pour la validation des propriétés (props)
 import Host from "../Host/host"; // Importation du composant Host pour afficher les informations de l'hôte
-import Tags from "../Tags/tags"; // Importation du composant Tags pour afficher les tags
-import Rating from "../Rating/rating"; // Importation du composant Rating pour afficher la notation
+import Tags from "./tags"; // Importation du composant Tags pour afficher les tags
+import Rating from "./rating"; // Importation du composant Rating pour afficher la notation
 
 // Définition du composant fonctionnel Logement
 function Logement({ title, localisation, tags, host, rating }) {

@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"; // Importation de PropTypes pour la validation des propriétés (props)
-import completedNotation from "../../assets/images/completedNotation.png"; // Importation de l'image d'une étoile pleine
-import emptyNotation from "../../assets/images/emptyNotation.png"; // Importation de l'image d'une étoile vide
+import completedNotation from "../assets/images/completedNotation.png"; // Importation de l'image d'une étoile pleine
+import emptyNotation from "../assets/images/emptyNotation.png"; // Importation de l'image d'une étoile vide
 
 // Définition du composant fonctionnel Rating
 function Rating({ rating }) {
