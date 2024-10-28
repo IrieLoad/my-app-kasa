@@ -25,9 +25,8 @@ function Collapse({ title, children }) {
         />
       </div>
 
-      {/* Affichage conditionnel du contenu du collapse seulement si isOpen est true */}
-      {isOpen && (
-        <div className="collapse__content"> {/* Conteneur pour le contenu à l'intérieur du collapse */}
+        <div className={`collapse__content ${isOpen ? "collapse__content--open" : ""}`}> {/* Conteneur pour le contenu à l'intérieur du collapse */}
+          
           {/* Si children est un tableau */}
           {Array.isArray(children) ? (
             <ul className="collapse__list"> {/* Conteneur de liste */}
@@ -39,7 +38,7 @@ function Collapse({ title, children }) {
             <div className="collapse__text">{children}</div> // Sinon, si children est une chaîne de caractères, affiche children
           )}
         </div>
-      )}
+      
     </div>
   );
 }

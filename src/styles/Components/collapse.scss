@@ -25,13 +25,26 @@
   }
 
   &__arrow-open {
-    transform: rotate(180deg);
+    transform: rotate(-180deg);
   }
 
   &__content {
     @include mixins.spacing(0, 15px);
     background-color: variables.$secondary-color;
+    overflow: hidden;
+    max-height: 0; 
+    opacity: 0; 
+    transform: scaleY(0); 
+    transform-origin: top; // Définit l'origine de l'animation en haut
+    transition: max-height 0.4s ease, opacity 0.3s ease, transform 0.4s ease; // Transition combinée pour max-height, opacity, et transform
     border-radius: 5px;
+  }
+
+   &__content--open {
+    max-height: 500px; // Hauteur maximale pour l'ouverture progressive
+    opacity: 1; 
+    transform: scaleY(1); // Retrait du scale pour dépliage complet
+    padding: 10px 15px; 
   }
 
   &__text,
