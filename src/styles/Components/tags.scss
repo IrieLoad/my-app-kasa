@@ -11,14 +11,14 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
   // Version mobile
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     height: 20px;
     padding: 0 8px;
     border-radius: 10px;
   }
 
   // Version tablette
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     height: 22px;
   }
 
@@ -27,12 +27,12 @@
     margin: auto 0;
 
     // Version mobile
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
       font-size: 10px;
     }
 
     // Version tablette
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       font-size: 12px;
     }
   }

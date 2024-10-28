@@ -40,7 +40,7 @@
   }
 
   // Version tablette
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     &__number {
       font-size: 120px;
     }
@@ -55,7 +55,7 @@
   }
 
   // Version mobile
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     &__number {
       font-size: 80px;
     }

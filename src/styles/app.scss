@@ -7,8 +7,8 @@ body {
   max-width: 1440px;
 
   // Version mobile 
-  @media (max-width: 375px) {
-    max-width: 375px;
+  @media (max-width: 768px) {
+    max-width: 768px;
   }
 }
 
@@ -19,7 +19,7 @@ body {
   max-width: 100%;
 
   // Version mobile 
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     width: 100%;
   }
 }

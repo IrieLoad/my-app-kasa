@@ -41,7 +41,7 @@
   }
 
   // Version tablette
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     &__title {
       font-size: 20px;
     }
@@ -53,7 +53,7 @@
 
 
   // Version mobile 
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
     &__header {
       height: 18px;
     }

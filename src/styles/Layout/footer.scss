@@ -20,12 +20,12 @@ footer {
     margin-bottom: 0;
 
     // Version tablette
-    @media (max-width: 768px) {
+    @media (max-width: 1024px) {
       font-size: 20px;
     }
 
     // Version mobile 
-    @media (max-width: 375px) {
+    @media (max-width: 768px) {
       font-size: 14px;
       width: 150px;
       margin-top: 10px;
